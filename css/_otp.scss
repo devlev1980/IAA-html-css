@@ -1,0 +1,104 @@
+@import "colors";
+@import "variables";
+@import "mixins";
+@import "rtl";
+
+.main_container {
+  display: flex;
+  height: 100vh;
+
+  .col_right {
+    border: 1px solid;
+    display: flex;
+    flex: 1;
+    background: url("https://picsum.photos/1910/1080") no-repeat 100% 100%;
+    object-fit: cover;
+  }
+
+  .col_left {
+
+    max-width: 840px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: #fff;
+
+    .form_wrapper {
+      @include display-flex-column;
+      width: 100%;
+      direction: $direction;
+      align-items: center;
+      max-width: 432px;
+      margin: 165px auto;
+
+
+      h1, p {
+        text-align: center;
+        color: $primaryColor;
+      }
+
+      h1 {
+        font-size: $fs42;
+        font-family: OpenSansHebrewBold, sans-serif;
+      }
+
+      p {
+        font-size: 27px;
+        margin-bottom: 73px;
+      }
+
+      form.login_form {
+        input, span {
+          font-size: $fs18;
+          color: $inputColor;
+        }
+
+        span {
+          display: block;
+          margin-bottom: 27px;
+        }
+
+        .form-group:not(:last-child) {
+          margin-bottom: 21px;
+
+        }
+
+        .form-group {
+          &.invalid {
+            input {
+              border: 1px solid $inputInvalid;
+            }
+          }
+
+          input {
+            padding: 9px 10px;
+            background-color: $inputBg;
+            border: 1px solid $input_border;
+            border-radius: $borderRadius;
+
+            &::placeholder {
+              font-size: $fs16;
+            }
+          }
+
+        }
+
+        .actions {
+          margin-top: 64px;
+
+          button.btn-primary {
+            background-color: $buttonBg;
+            font-size: $fs18;
+            box-shadow: $buttonBoxShadow;
+          }
+        }
+
+
+      }
+    }
+
+
+  }
+
+
+}

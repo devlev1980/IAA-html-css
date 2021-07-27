@@ -1,0 +1,37 @@
+@import "otp";
+
+.col_left {
+  .form_wrapper {
+    .login_form {
+
+      span {
+        color: $primaryColor;
+        text-align: center;
+      }
+
+      p {
+        font-size: $fs16 !important;
+        color: $messageColor;
+        margin-bottom: 18px;
+      }
+
+      .form-group.link {
+        width: 100%;
+        text-align: center;
+        a {
+          text-align: center;
+          margin: 24px 0 58px 0;
+          color: $inputColor;
+          font-family: OpenSansHebrew,sans-serif;
+        }
+      }
+      .actions{
+        button.btn-primary{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,220 @@
+/*** RTL websites ***/
+/*** The new CSS Reset - version 1.0.0 (last updated 8.7.2021) ***/
+/* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+  all: unset;
+  display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol, ul {
+  list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+  max-width: 100%;
+}
+
+/* removes spacing between cells in tables */
+table {
+  border-collapse: collapse;
+}
+
+/* removes underline on links */
+a {
+  color: unset;
+}
+
+@font-face {
+  font-family: OpenSansHebrew;
+  src: url(assets/fonts/OpenSansHebrew-Regular.ttf);
+}
+@font-face {
+  font-family: OpenSansHebrewLight;
+  src: url(assets/fonts/OpenSansHebrew-Light.ttf);
+}
+@font-face {
+  font-family: OpenSansHebrewBold;
+  src: url(assets/fonts/OpenSansHebrew-Bold.ttf);
+}
+/*** RTL websites ***/
+.main_container {
+  display: flex;
+  height: 100vh;
+}
+.main_container .col_right {
+  border: 1px solid;
+  display: flex;
+  flex: 1;
+  background: url("https://picsum.photos/1910/1080") no-repeat 100% 100%;
+  object-fit: cover;
+}
+.main_container .col_left {
+  max-width: 840px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color: #fff;
+}
+.main_container .col_left .form_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  direction: rtl;
+  align-items: center;
+  max-width: 432px;
+  margin: 165px auto;
+}
+.main_container .col_left .form_wrapper h1, .main_container .col_left .form_wrapper p {
+  text-align: center;
+  color: #0d1555;
+}
+.main_container .col_left .form_wrapper h1 {
+  font-size: 42px;
+  font-family: OpenSansHebrewBold, sans-serif;
+}
+.main_container .col_left .form_wrapper p {
+  font-size: 27px;
+  margin-bottom: 73px;
+}
+.main_container .col_left .form_wrapper form.login_form input, .main_container .col_left .form_wrapper form.login_form span {
+  font-size: 18px;
+  color: #152d66;
+}
+.main_container .col_left .form_wrapper form.login_form span {
+  display: block;
+  margin-bottom: 27px;
+}
+.main_container .col_left .form_wrapper form.login_form .form-group:not(:last-child) {
+  margin-bottom: 21px;
+}
+.main_container .col_left .form_wrapper form.login_form .form-group.invalid input {
+  border: 1px solid #d43d48;
+}
+.main_container .col_left .form_wrapper form.login_form .form-group input {
+  padding: 9px 10px;
+  background-color: #f9fafd;
+  border: 1px solid rgba(21, 45, 102, 0.15);
+  border-radius: 6px;
+}
+.main_container .col_left .form_wrapper form.login_form .form-group input::placeholder {
+  font-size: 16px;
+}
+.main_container .col_left .form_wrapper form.login_form .actions {
+  margin-top: 64px;
+}
+.main_container .col_left .form_wrapper form.login_form .actions button.btn-primary {
+  background-color: #4a6af1;
+  font-size: 18px;
+  box-shadow: 0 16px 24px 0 rgba(74, 106, 241, 0.18);
+}
+
+/*** RTL websites ***/
+.main_container {
+  display: flex;
+  height: 100vh;
+}
+.main_container .col_right {
+  border: 1px solid;
+  display: flex;
+  flex: 1;
+  background: url("https://picsum.photos/1910/1080") no-repeat 100% 100%;
+  object-fit: cover;
+}
+.main_container .col_left {
+  max-width: 840px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color: #fff;
+}
+.main_container .col_left .form_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  direction: rtl;
+  align-items: center;
+  max-width: 432px;
+  margin: 165px auto;
+}
+.main_container .col_left .form_wrapper h1, .main_container .col_left .form_wrapper p {
+  text-align: center;
+  color: #0d1555;
+}
+.main_container .col_left .form_wrapper h1 {
+  font-size: 42px;
+  font-family: OpenSansHebrewBold, sans-serif;
+}
+.main_container .col_left .form_wrapper p {
+  font-size: 27px;
+  margin-bottom: 73px;
+}
+.main_container .col_left .form_wrapper form.login_form input, .main_container .col_left .form_wrapper form.login_form span {
+  font-size: 18px;
+  color: #152d66;
+}
+.main_container .col_left .form_wrapper form.login_form span {
+  display: block;
+  margin-bottom: 27px;
+}
+.main_container .col_left .form_wrapper form.login_form .form-group:not(:last-child) {
+  margin-bottom: 21px;
+}
+.main_container .col_left .form_wrapper form.login_form .form-group.invalid input {
+  border: 1px solid #d43d48;
+}
+.main_container .col_left .form_wrapper form.login_form .form-group input {
+  padding: 9px 10px;
+  background-color: #f9fafd;
+  border: 1px solid rgba(21, 45, 102, 0.15);
+  border-radius: 6px;
+}
+.main_container .col_left .form_wrapper form.login_form .form-group input::placeholder {
+  font-size: 16px;
+}
+.main_container .col_left .form_wrapper form.login_form .actions {
+  margin-top: 64px;
+}
+.main_container .col_left .form_wrapper form.login_form .actions button.btn-primary {
+  background-color: #4a6af1;
+  font-size: 18px;
+  box-shadow: 0 16px 24px 0 rgba(74, 106, 241, 0.18);
+}
+
+.col_left .form_wrapper .login_form span {
+  color: #0d1555;
+  text-align: center;
+}
+.col_left .form_wrapper .login_form p {
+  font-size: 16px !important;
+  color: #404040;
+  margin-bottom: 18px;
+}
+.col_left .form_wrapper .login_form .form-group.link {
+  width: 100%;
+  text-align: center;
+}
+.col_left .form_wrapper .login_form .form-group.link a {
+  text-align: center;
+  margin: 24px 0 58px 0;
+  color: #152d66;
+  font-family: OpenSansHebrew, sans-serif;
+}
+.col_left .form_wrapper .login_form .actions button.btn-primary {
+  width: 100%;
+}
+
+body {
+  display: ltr;
+  font-family: OpenSansHebrew, sans-serif;
+}
+
+/*# sourceMappingURL=main.css.map */

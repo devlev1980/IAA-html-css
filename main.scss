@@ -1,0 +1,11 @@
+@import "css/rtl";
+@import "css/reset";
+@import "css/typography";
+@import "css/otp";
+@import "css/otp_1.1";
+
+
+body {
+  display: $opposite-direction;
+  font-family: OpenSansHebrew, sans-serif;
+}
